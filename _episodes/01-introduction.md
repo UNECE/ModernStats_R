@@ -1,13 +1,13 @@
 ---
-title: "Introduction"
-teaching: 0
+title: "Introduction to RStudio"
+teaching: 15
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How do I use the RStudio graphical user interface?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Learn the basic functions and navigation of RStudio"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "RStudio allows for a visual way to interact with R"
 ---
 FIXME
 
