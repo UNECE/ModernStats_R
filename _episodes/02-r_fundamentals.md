@@ -1,5 +1,5 @@
 ---
-title: "Analysing Patient Data"
+title: "R Fundamentals"
 teaching: 60
 exercises: 0
 questions:
