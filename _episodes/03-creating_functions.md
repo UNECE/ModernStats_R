@@ -1,5 +1,5 @@
 ---
-title: "Analysing Patient Data"
+title: "Creating Functions"
 teaching: 15
 exercises: 0
 questions:
