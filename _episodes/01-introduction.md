@@ -1,13 +1,15 @@
 ---
-title: "Introduction to RStudio"
+title: "Introduction to Programming"
 teaching: 15
 exercises: 0
 questions:
-- "How do I use the RStudio graphical user interface?"
+- "What is programming?"
+- "What is Object oriented programming"
+- "How to document code?"
+- "Where can I get help?"
 objectives:
-- "Learn the basic functions and navigation of RStudio"
+- "Learn basic concepts of programming"
 keypoints:
-- "RStudio allows for a visual way to interact with R"
 ---
 FIXME
 
