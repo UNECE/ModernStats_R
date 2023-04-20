@@ -3,7 +3,11 @@ title: "Dealing with Messy Data"
 teaching: 30
 exercises: 0
 questions:
-- "What do I do when my data is messy?"
+- "What do I do if my data is the wrong class?"
+- "What is an NA?"
+- "What if my data has missing values?"
+- "How do I change decimal points and rounding in numeric data?"
+- "What if text strings have different cases?"
 objectives:
 - "learn to address common issues when cleaning data"
 - "learn to address incorrect variable types. NA values, missing values, decimal points, lowercase vs uppercase in strings"

@@ -1,5 +1,5 @@
 ---
-title: "Making Dynamic Reports KnitR"
+title: "Outputting Data"
 teaching: 20
 exercises: 0
 questions:
