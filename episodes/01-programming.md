@@ -6,7 +6,7 @@ questions:
 - "What is programming?"
 - "What is object oriented programming"
 - "How to document code?"
-- "Where can I get help?"
+- "What is a directory?"
 objectives:
 - "Learn basic concepts of programming"
 keypoints:

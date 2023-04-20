@@ -5,7 +5,6 @@ exercises: 0
 questions:
 - "How do I make choices using if and else statements?"
 - "How do I compare values?"
-- "How should I document my code?"
 
 objectives:
 - "use conditional logic"
