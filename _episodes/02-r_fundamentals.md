@@ -3,14 +3,14 @@ title: "R Fundamentals"
 teaching: 60
 exercises: 0
 questions:
-- "Intro to IDE"
+- "How do I use the Rstudio IDE?"
 - "How do I read data into R?"
-- "How do I assign variables? (object-oriented programming)"
+- "How do I assign variables?"
 - "What is a data frame?"
 - "How do I access subsets of a data frame?"
 - "How do I calculate simple statistics like mean and median?"
-- "Where can I get help?"
-- "What is plotting"
+- "What is plotting?"
+- "How do I install and use packages?"
 objectives:
 - "read data into R"
 - "perform basic data operations"

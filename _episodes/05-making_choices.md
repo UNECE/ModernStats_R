@@ -5,12 +5,12 @@ exercises: 0
 questions:
 - "How do I make choices using if and else statements?"
 - "How do I compare values?"
-- "How do I save my plots to a PDF file?"
+- "How should I document my code?"
 
 objectives:
 - "use conditional logic"
 - "compare values to make choices"
-- "save plots to PDF"
+- "document code"
 
 keypoints:
 - "we can compare stored values"
