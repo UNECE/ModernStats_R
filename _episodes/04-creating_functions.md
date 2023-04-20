@@ -1,8 +1,9 @@
 ---
-title: "Creating Functions"
+title: "Functions"
 teaching: 15
 exercises: 0
 questions:
+- "What is a function?"
 - "How do I make a function?"
 - "How can I test my functions?"
 - "How should I document my code?"
