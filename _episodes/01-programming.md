@@ -81,12 +81,20 @@ number_flowers <- 7
 >
 > > ## Solution
 > >
-> > This is the body of the solution.
+> > 
 > >
 > > ~~~
 > > mass <- 47.5
 > > age <- 122
+> > 
 > > ~~~
+> > <img src="fig/mass-age-assign-1.svg" alt="Assigning Variables" />
+> > ~~~
+> > mass <- mass * 2.0
+> > age <- age - 20
+> > 
+> > ~~~
+> > <img src="fig/mass-age-assign-2.svg" alt="Assigning Variables" />
 > > {: .output}
 > {: .solution}
 {: .challenge}
@@ -95,16 +103,15 @@ number_flowers <- 7
 
 
 
-~~~
-### Variable Naming Conventions
 
-Historically, R programmers have used a variety of conventions for naming variables. The `.` > character in R can be a valid part of a variable name; thus the above assignment could have 
-easily been `weight.kg <- 57.5`. This is often confusing to R newcomers who have programmed 
-in languages where `.` has a more significant meaning.
-Today, most R programmers 1) start variable names with lower case letters, 2) separate words > in variable names with underscores, and 3) use only lowercase letters, underscores, and 
-numbers in variable names. The *Tidyverse Style Guide* includes
-a [section](https://style.tidyverse.org/syntax.html) on this and other style considerations.
-~~~
+> ## Variable Naming Conventions
+
+> Historically, R programmers have used a variety of conventions for naming variables. The `.` > character in R can be a valid part of a variable name; thus the above assignment could have 
+> easily been `weight.kg <- 57.5`. This is often confusing to R newcomers who have programmed 
+> in languages where `.` has a more significant meaning.
+> Today, most R programmers 1) start variable names with lower case letters, 2) separate words > in variable names with underscores, and 3) use only lowercase letters, underscores, and 
+> numbers in variable names. The *Tidyverse Style Guide* includes
+> a [section](https://style.tidyverse.org/syntax.html) on this and other style considerations.
 {: .callout}
 
 
