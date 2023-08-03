@@ -67,45 +67,11 @@ number_flowers <- 7
 {: .output}
 
 
-> ## Assigning Values to Variables
-> 
-> Draw diagrams showing what variables refer to what values after each statement in the following program:
-> 
-> ~~~
-> mass <- 47.5
-> age <- 122
-> mass <- mass * 2.0
-> age <- age - 20
-> ~~~
-> {: .source}
->
-> > ## Solution
-> >
-> > 
-> >
-> > ~~~
-> > mass <- 47.5
-> > age <- 122
-> > 
-> > ~~~
-> > <img src="fig/mass-age-assign-1.svg" alt="Assigning Variables" />
-> > ~~~
-> > mass <- mass * 2.0
-> > age <- age - 20
-> > 
-> > ~~~
-> > <img src="fig/mass-age-assign-2.svg" alt="Assigning Variables" />
-> > {: .output}
-> {: .solution}
-{: .challenge}
-
-
 
 
 
 
 > ## Variable Naming Conventions
-
 > Historically, R programmers have used a variety of conventions for naming variables. The `.` > character in R can be a valid part of a variable name; thus the above assignment could have 
 > easily been `weight.kg <- 57.5`. This is often confusing to R newcomers who have programmed 
 > in languages where `.` has a more significant meaning.
