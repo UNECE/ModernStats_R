@@ -16,8 +16,13 @@ objectives:
 - "perform basic data operations"
 
 keypoints:
+- "The Rstudio IDE gives you tools for programming"
+- "Read in data with `read.csv()"
 - "Data frames are the most common data type used in R"
+- "Index with square bracket notation to access specific parts of a dataframe"
 - "R has built in functions for many common calculations and operations"
+- "Use plots to visualize data"
+- "Install packages from CRAN with `install.packages()"
 ---
 
 
@@ -90,21 +95,23 @@ data and scripts we are using are all in our working directory.
 The data files should be located in the directory `data`, inside the working
 directory. Now we can load the data into R using `read.csv`:
 
-```{r, results="hide"}
+~~~
 read.csv(file = "data/inflammation-01.csv", header = FALSE)
-```
+~~~
+{: .language-r}
 
 The expression `read.csv(...)` is a [function call](../learners/reference.md#function-call) that asks R to run the function `read.csv`.
 
 `read.csv` has two [arguments](../learners/reference.md#argument): the name of the file we want to read, and whether the first line of the file contains names for the columns of data.
 The filename needs to be a character string (or [string](../learners/reference.md#string) for short), so we put it in quotes. Assigning the second argument, `header`, to be `FALSE` indicates that the data file does not have column headers. We'll talk more about the value `FALSE`, and its converse `TRUE`, in lesson 04. In case of our `inflammation-01.csv` example, R auto-generates column names in the sequence `V1` (for "variable 1"), `V2`, and so on, until `V40`.
 
-
+~~~
 > ## Other Options for Reading CSV Files
 > 
 > `read.csv` actually has many more arguments that you may find useful when
 > importing your own data in the future. You can learn more about these
 > options in this supplementary [lesson](11-supp-read-write-csv.Rmd).
+~~~
 {: .callout}
 
 ~~~
@@ -394,6 +401,25 @@ The maximum value rises and falls perfectly smoothly, while the minimum seems to
 {: .challenge}
 ~~~
 {: .source}
+
+## Installing Packages
+
+Although R has many built in tools for calculations, most programmers use *packages* (also known as libraries) to add to their toolbox. Packages are bundles of functions that can be installed and loaded from [CRAN](https://cran.r-project.org/) or other library repositories. 
+
+How you download packages might be specific to your statistical organization, so consult with your instructor. Let's try installing `tidyverse`, a widely used package for data management. 
+
+
+~~~
+install.packages("dplyr")
+~~~
+{: .language-r}
+
+Then, we'll need to load the package with `library()`
+
+~~~
+library(dplyr)
+~~~
+{: .language-r}
 
 
 {% include links.md %}
