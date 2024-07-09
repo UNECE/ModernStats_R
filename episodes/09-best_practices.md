@@ -1,15 +1,29 @@
 ---
-title: "Best Practices for Writing R Code"
+title: Best Practices for Writing R Code
 teaching: 15
 exercises: 0
-questions:
-- "How can I write R code that other people can understand and use?"
-objectives:
-- "learn best practices to make your code useable for others"
-
-keypoints:
-- "making your code readable allows for others to collaborate"
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- learn best practices to make your code useable for others
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can I write R code that other people can understand and use?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 FIXME
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- making your code readable allows for others to collaborate
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
