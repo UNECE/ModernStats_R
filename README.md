@@ -23,8 +23,7 @@ Look for the tag ![good\_first\_issue](https://img.shields.io/badge/-good%20firs
 
 Current maintainers of this lesson are
 
-- Catalina Albury
-- Tabitha Williams
+- To be updated
 
 ## Authors
 
