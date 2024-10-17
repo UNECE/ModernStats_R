@@ -13,7 +13,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How do I use the Rstudio IDE?
+- How do I use the RStudio IDE?
 - How do I read data into R?
 - What is a data frame?
 - How do I access subsets of a data frame?
@@ -23,11 +23,11 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## The Rstudio IDE
+## The RStudio IDE
 
-Rstudio (which will soon be known as Posit) is an IDE (Integrated Development Environment). Just as certain word processing software provide a handy squiggly line under a misspelled word, your IDE provides tools for helping you write good code. Rstudio has 4 panels by default. Utilize them and you're on your way to becoming the programming data scientist you always dreamed you'd be. [Check out this link from r-bloggers.com for an in depth tour.](https://www.r-bloggers.com/2018/08/a-tour-of-rstudio/)
+RStudio (which will soon be known as Posit) is an IDE (Integrated Development Environment). Just as certain word processing software provide a handy squiggly line under a misspelled word, your IDE provides tools for helping you write good code. RStudio has 4 panels by default. Utilize them and you're on your way to becoming the programming data scientist you always dreamed you'd be. [Check out this link from r-bloggers.com for an in depth tour.](https://www.r-bloggers.com/2018/08/a-tour-of-rstudio/)
 
-## The Four Corners of Rstudio
+## The Four Corners of RStudio
 
 Top Left: Your script editor. From the top left you can select the type of file within RStudio you wish to run. In the case of this tutorial, you can use the plus sign to select for a R script. This section contains files that you can edit and save for later.
 
@@ -37,7 +37,7 @@ Bottom Left: This is your console. Think of this as the interactive pane, where 
 
 Bottom Right: This is the management section. From here you can browse the files within your computer and manually select a working directory. Here is where the help finder will pop up when we use it later in this tutorial. Any plots that are produced will be created here.
 
-![](https://i.redd.it/o6tq04zyozh11.png){alt='The 4 Corners of Rstudio. Photo courtsey of u/randy3k on the r/rstats subreddit'}
+![](https://i.redd.it/o6tq04zyozh11.png){alt='The 4 Corners of RStudio. Photo courtsey of u/randy3k on the r/rstats subreddit'}
 
 ## Reading Data into R
 
@@ -85,7 +85,7 @@ make it easier to resume work after a break.
 
 ### Loading Data
 
-Now that we are set up with an Rstudio project, we are sure that the
+Now that we are set up with an RStudio project, we are sure that the
 data and scripts we are using are all in our working directory.
 The data files should be located in the directory `data`, inside the working
 directory. Now we can load the data into R using `read.csv`:
@@ -389,7 +389,7 @@ library(dplyr)
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- The Rstudio IDE gives you tools for programming
+- The RStudio IDE gives you tools for programming
 - Read in data with \`read.csv()
 - Data frames are the most common data type used in R
 - Index with square bracket notation to access specific parts of a dataframe
