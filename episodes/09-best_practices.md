@@ -18,7 +18,9 @@ exercises: 0
 
 FIXME
 
+## This is an example change for demonstration purposes
 
+This change will be reverted later on.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
