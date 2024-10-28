@@ -432,7 +432,7 @@
         
 <section id="aio-01-programming"><p>Content from <a href="01-programming.html">Introduction to Programming</a></p>
 <hr>
-<p>Last updated on 2024-07-11 |
+<p>Last updated on 2024-10-28 |
 
         <a href="https://github.com/UNECE/ModernStats_R/edit/main/episodes/01-programming.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -449,7 +449,7 @@
 <ul>
 <li>What is programming?</li>
 <li>What is object oriented programming?</li>
-<li>How to document code?</li>
+<li>How do I document code?</li>
 <li>What is a directory?</li>
 </ul>
 </div>
@@ -501,7 +501,7 @@ Structures). We can assign “labels” to these objects, creating a
 <em>variable</em> and use them interchangeably. We assign objects with
 an assignment operator. In R, the most commonly used assignment operator
 is <code>&lt;-</code>. Try reproducing the example below on your machine
-by entering the code into the console and hitting the “run” button.</p>
+by entering the code into the RStudio “Console” and hitting “Enter”.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -513,7 +513,11 @@ by entering the code into the console and hitting the “run” button.</p>
 <span><span class="fu">print</span><span class="op">(</span><span class="va">number_flowers</span><span class="op">)</span></span></code></pre>
 </div>
 <p>We can get the value stored within the variable by printing it.</p>
-<pre class="source"><code>[1] 8</code></pre>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[1] 8</code></pre>
+</div>
 <p>Assigning a new value to a variable breaks the connection with the
 old value; R forgets that number and applies the variable name to the
 new value.</p>
@@ -521,9 +525,16 @@ new value.</p>
 the calculation you used to create it. This is an important point if
 you’re used to the way a spreadsheet program automatically updates
 linked cells. Let’s look at an example.</p>
-<pre><code><span><span class="co"># Reassign the variable</span></span>
-<span><span class="va">number_flowers</span> <span class="op">&lt;-</span> <span class="fl">7</span></span></code></pre>
-<p>{: .language-r)</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Reassign the variable</span></span>
+<span><span class="va">number_flowers</span> <span class="op">&lt;-</span> <span class="fl">7</span></span>
+<span></span>
+<span><span class="co"># Print the variable's contents</span></span>
+<span><span class="fu">print</span><span class="op">(</span><span class="va">number_flowers</span><span class="op">)</span></span></code></pre>
+</div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -537,16 +548,16 @@ linked cells. Let’s look at an example.</p>
 <h3 class="callout-title">Variable Naming Conventions</h3>
 <div class="callout-content">
 <p>Historically, R programmers have used a variety of conventions for
-naming variables. The <code>.</code> &gt; character in R can be a valid
-part of a variable name; thus the above assignment could have easily
-been <code>weight.kg &lt;- 57.5</code>. This is often confusing to R
+naming variables. The <code>.</code> character in R can be a valid part
+of a variable name; thus the above assignment could have easily been
+<code>weight.kg &lt;- 57.5</code>. This is often confusing to R
 newcomers who have programmed in languages where <code>.</code> has a
 more significant meaning. Today, most R programmers 1) start variable
-names with lower case letters, 2) separate words &gt; in variable names
-with underscores, and 3) use only lowercase letters, underscores, and
-numbers in variable names. The <em>Tidyverse Style Guide</em> includes a
-<a href="https://style.tidyverse.org/syntax.html" class="external-link">section</a> on this
-and other style considerations.</p>
+names with lower case letters, 2) separate words in variable names with
+underscores, and 3) use only lowercase letters, underscores, and numbers
+in variable names. This is known as “snake case”. The <em>Tidyverse
+Style Guide</em> includes a <a href="https://style.tidyverse.org/syntax.html" class="external-link">section</a> on this and
+other style considerations.</p>
 </div>
 </div>
 </div>
@@ -560,10 +571,15 @@ information about the code that will follow. Commenting as much code as
 possible is part of best practices. Always comment your code! You owe it
 to your colleagues who may see your code (not to mention your future
 coding self).</p>
-<pre class="-r"><code><span><span class="co"># Hashtags go before commented code, which is not run</span></span>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Hashtags go before commented code, which is not run</span></span>
 <span></span>
 <span><span class="co"># print("This code will not be run")</span></span>
 <span><span class="fu">print</span><span class="op">(</span><span class="st">"Always comment your code!"</span><span class="op">)</span></span></code></pre>
+</div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -589,7 +605,7 @@ directory.</p>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># print current working directory </span></span>
+<code class="sourceCode R"><span><span class="co"># Print current working directory </span></span>
 <span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
@@ -600,12 +616,12 @@ directory.</p>
 <p>Before beginning our lessons, please set your working directory to
 the folder that we created in the setup section with
 <code>setwd()</code>. For example, if your folder is named
-Learning-R:</p>
+<code>Learning-R</code>:</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># change current working directory </span></span>
+<code class="sourceCode R"><span><span class="co"># Change current working directory </span></span>
 <span><span class="fu">setwd</span><span class="op">(</span><span class="st">"~/Documents/Learning-R"</span><span class="op">)</span></span></code></pre>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -617,7 +633,7 @@ Learning-R:</p>
 <div class="callout-content">
 <ul>
 <li>Programming makes our work faster, more reproducible, and more
-transparent.</li>
+transparent</li>
 <li>R is an object oriented programming language</li>
 <li>Document your code with comments</li>
 <li>A working directory is the active location on your computer where R
@@ -819,7 +835,7 @@ Then run the following code and see if your expectations agree:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>R will construct column headers from values in your first row of
 data, resulting in <code>X0 X0.1 X1 X3 X1.1 X2 ...</code>.</p>
@@ -852,7 +868,7 @@ mark, separated by semicolons.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1125,7 +1141,7 @@ for each day across all patients.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>This is the body of the solution.</p>
 <div class="codewrapper sourceCode" id="cb23">
